@@ -1150,25 +1150,106 @@ footer .heart{color:var(--accent)}
   .hamburger{display:flex}
   #nav{padding:1rem 5vw}
 
-  /* HERO */
+  /* HERO — mobile layout: avatar small + centered top, text below */
   #hero{
     grid-template-columns:1fr;
-    gap:2.5rem;
-    padding:7rem 5vw 4rem;
+    grid-template-rows:auto auto;
+    gap:0;
+    padding:6.5rem 6vw 4rem;
     text-align:center;
     min-height:auto;
+    align-items:start;
   }
-  .hero-left{order:2}
-  .hero-right{order:1;margin-bottom:0}
-  .hero-eyebrow{justify-content:center}
-  .hero-role{justify-content:center}
-  .hero-desc{margin:0 auto 2rem;max-width:100%}
-  .hero-actions{justify-content:center}
-  .hero-name .n1,.hero-name .n2{font-size:clamp(3rem,12vw,5rem)}
-  .avatar-frame{width:min(260px,70vw);height:min(260px,70vw)}
+  /* Avatar section — top, compact */
+  .hero-right{
+    order:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:2.25rem;
+  }
+  .avatar-frame{
+    width:clamp(130px,38vw,180px);
+    height:clamp(130px,38vw,180px);
+    box-shadow:0 8px 40px rgba(0,0,0,0.12);
+  }
+  .avatar-blob{opacity:0.18}
+  /* show the ribbon nicely */
+  .award-ribbon{
+    font-size:0.62rem;
+    padding:0.3rem 0.9rem;
+    bottom:-8px;
+    white-space:nowrap;
+  }
+  /* hide orbit icons & deco on mobile */
   .orb1,.orb2,.orb3,.orb4{display:none}
   .float-tag{display:none}
   .hero-bg-text{display:none}
+  .avatar-accent-ring{display:none}
+
+  /* Text block — below avatar */
+  .hero-left{
+    order:2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  /* Eyebrow pill */
+  .hero-eyebrow{
+    justify-content:center;
+    font-size:0.68rem;
+    letter-spacing:0.15em;
+    padding:0.35rem 0.9rem;
+    margin-bottom:1.25rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:100%;
+  }
+  /* Name */
+  .hero-name{
+    margin-bottom:0.75rem;
+    line-height:0.92;
+  }
+  .hero-name .n1,
+  .hero-name .n2{
+    font-size:clamp(2.6rem,11vw,4.2rem);
+    letter-spacing:-0.03em;
+  }
+  /* Role chips */
+  .hero-role{
+    justify-content:center;
+    font-size:0.68rem;
+    letter-spacing:0.12em;
+    gap:0.4rem;
+    margin-bottom:1.1rem;
+    flex-wrap:wrap;
+    max-width:90vw;
+  }
+  .role-sep{font-size:0.85rem}
+  /* Description */
+  .hero-desc{
+    font-size:0.9rem;
+    line-height:1.7;
+    margin:0 auto 1.75rem;
+    max-width:88vw;
+    text-align:center;
+  }
+  /* Buttons */
+  .hero-actions{
+    justify-content:center;
+    gap:0.75rem;
+    flex-wrap:wrap;
+    width:100%;
+  }
+  .btn-fill,.btn-ghost{
+    flex:1 1 auto;
+    min-width:140px;
+    max-width:200px;
+    justify-content:center;
+    padding:0.8rem 1.25rem;
+    font-size:0.83rem;
+  }
 
   /* STATS */
   .stats-strip{grid-template-columns:1fr;gap:0}
@@ -1225,13 +1306,25 @@ footer .heart{color:var(--accent)}
   #nav{padding:0.85rem 4vw}
   .nav-logo{font-size:1.2rem}
 
-  /* HERO */
-  #hero{padding:6rem 4vw 3rem;gap:2rem}
-  .hero-name .n1,.hero-name .n2{font-size:clamp(2.6rem,13vw,4rem)}
-  .hero-eyebrow{font-size:0.7rem;padding:0.35rem 0.85rem}
-  .hero-desc{font-size:0.9rem}
-  .btn-fill,.btn-ghost{padding:0.75rem 1.5rem;font-size:0.82rem}
-  .avatar-frame{width:min(220px,75vw);height:min(220px,75vw)}
+  /* HERO — tighten everything further */
+  #hero{padding:6rem 5vw 3rem}
+  .avatar-frame{
+    width:clamp(110px,32vw,150px);
+    height:clamp(110px,32vw,150px);
+  }
+  .hero-right{margin-bottom:1.75rem}
+  .hero-name .n1,.hero-name .n2{font-size:clamp(2.2rem,12vw,3.6rem)}
+  .hero-eyebrow{font-size:0.63rem;letter-spacing:0.12em;padding:0.3rem 0.8rem}
+  .hero-role{font-size:0.62rem;gap:0.3rem}
+  .hero-desc{font-size:0.85rem;max-width:95vw;margin-bottom:1.5rem}
+  .btn-fill,.btn-ghost{
+    flex:1 1 100%;
+    max-width:100%;
+    padding:0.85rem 1rem;
+    font-size:0.82rem;
+    justify-content:center;
+  }
+  .hero-actions{flex-direction:column;align-items:stretch;gap:0.6rem}
 
   /* STATS */
   .stat-val{font-size:clamp(2.5rem,10vw,4rem)}
