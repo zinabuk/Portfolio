@@ -1,13 +1,14 @@
-# Mohammed Farhan — Personal Portfolio
+# Zinabu Kalayou — Personal Portfolio
 
 > **AI Engineer & Founder** · Chantilly, VA  
-> [Live Site](https://github.com/Far-hantech/portfolio) · [Email](mailto:farhanay916@gmail.com)
+> [Live Site](https://github.com/Far-hantech/portfolio) · [Email](mailto:kalayuzinabu@gmail.com)
 
 ---
 
 ## 📌 Overview
 
-A world-class, single-file personal portfolio website for **Mohammed Farhan** — AI Engineer, Founder of [Studygy.io](https://studygy.io), and AI Icon Award 2026 recipient. Built for speed, aesthetics, and full mobile responsiveness.
+A world-class, single-file personal portfolio website for **Zinabu Kalayou** — AI Engineer, Built for speed, aesthetics, and full mobile responsiveness.
+<!-- Founder of [flexbn.com](https://flexbn.com), and AI Icon Award 2026 recipient.  -->
 
 Inspired by elite designer portfolios (editorial typography, cinematic hero sections, interactive project reveals), the site ships as a **zero-dependency single HTML file** — no build step, no framework, just open and run.
 
@@ -159,10 +160,10 @@ All content lives directly in `index.html`. Here's where to update things:
 
 ### Personal info
 Search for these strings and replace:
-- `Mohammed Farhan` — your name
-- `farhanay916@gmail.com` — your email
+- `Zinabu Kalayou` — your name
+- `kalayouzinabu@gmail.com` — your email
 - `Studygy.io` — your company/project
-- `Chantilly, VA` — your location
+- `Addis Ababa, ET` — your location
 
 ### Avatar
 Replace `images/hero_avatar.png` with your own photo. The image is cropped into a circle via CSS (`border-radius: 50%`).
@@ -217,4 +218,4 @@ MIT — free to use, modify, and deploy. Attribution appreciated but not require
 
 ---
 
-<p align="center">Built with ❤️ by <strong>Mohammed Farhan</strong> · AI Engineer & Founder</p>
+<p align="center">Built with ❤️ by <strong>Zinabu Kalayou</strong> · AI Engineer & Founder</p>
